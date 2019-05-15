@@ -28,7 +28,6 @@ const app = express();
 const users = require('./routes/users');
 
 // Port Number
-console.log('appSetting.isProduction ->' ,appSetting.isProduction());
 const port = appSetting.isProduction() ? (process.env.PORT || 8080) : 3000; // IN PRODUCTION
 
 // CORS Middleware

@@ -1,6 +1,6 @@
 const appSetting = require('./app-setting');
 
 module.exports = {
-    database: appSetting.isProduction() ? 'mongodb+srv://japanbhavsar:japan@cluster0-cgm22.mongodb.net/test?retryWrites=true' : 'mongodb://localhost:27017/meanAuth',
-    secret: 'secret1'
+    database: appSetting.isProduction() ? 'YOUR_PRODCTION_MONGODB_URL' : 'mongodb://localhost:27017/meanAuth',
+    secret: 'YOUR_SECRET_KEY'
 }
